@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger</title>
+  <link rel="shortcut icon" type="image" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <!-- fonts links -->
+</head>
+<body>
+  <!-- nav section -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt="" width="30px">BUR<span>GER</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="first-child">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Burger</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Other
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffc800;">
+                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                <li><a class="dropdown-item" href="#">Fries</a></li>
+                <li><a class="dropdown-item" href="#">Fried Chicken</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex">
+            <div class="icons">
+              <i class="fa-regular fa-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section -->
+     <!-- cart section -->
+     <h2 class="page-title text-center my-5 py-3" style="background-color: #ffc800;">Checkout</h2>
+     <div class="page-content">  
+        <section class="pt-80 pb-40">
+            <div class="container-fluid">
+                <form action="order-tracking.html">
+                    <div class="row">
+                        <div class="col-lg-8 mb-64 mb-lg-0 px-5">
+                            <h5 class="mb-32">DATOS DE ENTREGA</h5>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                     <div class="form-group mb-32">
+                                        <label>Nombres</label>
+                                        <input type="text" name="f-name" autocomplete="off" placeholder="Mr. John">
+                                    <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                                </div>
+                                <div class="col-sm-6">
+                                     <div class="form-group mb-32">
+                                        <label>Apellidos</label>
+                                        <input type="text" name="l-name" autocomplete="off" placeholder="Deo">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-32">
+                                        <label>Email</label>
+                                        <input type="email" name="email" autocomplete="off" placeholder="email@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group mb-32">
+                                        <label>Celular</label>
+                                        <input type="tel" name="phone" autocomplete="off" placeholder="12345679">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-32">
+                                        <label>Direccion</label>
+                                        <input type="text" name="address" autocomplete="off" placeholder="Your Address">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-32">
+                                        <label>Direccion (optional)</label>
+                                        <input type="text" name="address2" autocomplete="off" placeholder="Apartment, Suite, Unit etc.">
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="mt-64">
+                                <h5 class="mb-32">INFORMACION ADICIONAL</h5>
+                                <div class="form-group">
+                                    <label>Notas de orden (opcional)</label>
+                                    <textarea name="noe" id="additiona-note" rows="5" placeholder="Note About Your Order, e.g. special notes for delivery."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="cart-summary">
+                                <h6 class="title mb-24">RESUMEN DE ORDEN</h6>
+                                <div class="cart-summary-detail mb-24">
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">Crunch Burger</p>
+                                        <p class="lead">$560.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">Sizzle Snap Burger</p>
+                                        <p class="lead">$280.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">VALOR DOMICILIO</p>
+                                        <p class="lead">$5.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">DESCUENTO PROMO</p>
+                                        <p class="lead">$5.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-32">
+                                        <p class="lead color-black">SUBTOTAL</p>
+                                        <p class="lead color-black">$560.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-32">
+                                    <h5 class="color-primary">TOTAL</h5>
+                                    <h5 class="color-primary">$420.00</h5>
+                                </div>
+                                <div class="payment-method mb-24">
+                                    <ul class="unstyled">
+                                        <li>
+                                            <label class="lead" for="cod"><input id="cod" type="radio" name="radio" class="radio" value="1" checked="checked">Contraentrga +(5%)</label>
+                                        </li>
+                                        <li>
+                                            <label class="lead" for="cp"><input id="cp" type="radio" name="radio" class="radio" value="2">PSE</label>
+                                        </li>
+                                        <li>
+                                            <label class="lead" for="bt"><input id="bt" type="radio" name="radio" class="radio" value="3">Transferencia</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="cus-btn dark w-100">
+                                    <span class="icon-wrapper">
+                                        <svg class="icon-svg icon-svg-copy" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M16.2522 11.9789C14.4658 10.1925 13.7513 6.14339 15.6567 4.23792M15.6567 4.23792C14.565 5.3296 11.4885 7.21521 7.91576 3.64246M15.6567 4.23792L4.34301 15.5516" stroke="#FCFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    Place Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+     </div>
+     <!-- cart section -->
+   <!-- footer -->
+    <footer id="footer" style="margin-top: 50px;">
+     <div class="footer-top">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3 col-md-6 footer-contact">
+             <a class="navbar-brand" href="#" id="logo2"><img src="./images/logo.png" alt="" width="30px">Burger</a>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, libero.</p><br>
+             <p>
+               Karachi <br><br>
+               Sindh <br><br>
+               Pakistan <br><br>
+             </p>
+             <strong><i class="fa-solid fa-phone"></i> Phone: <strong>+0000000000000000</strong></strong><br>
+             <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+           </div>
+           <div class="col-lg-3 col-md-6 footer-links">
+             <h4>Useful Links</h4>
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Privacy policay</a></li>
+             </ul>
+           </div>
+           
+           <div class="col-lg-3 col-md-6 footer-links">
+             <h4>Our Services</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aperiam.</p>
+             <ul>
+               <li><a href="#">Pizza</a></li>
+               <li><a href="#">Fried chicken</a></li>
+               <li><a href="#">Fries</a></li>
+             </ul>
+           </div>
+           
+           <div class="col-lg-3 col-md-6 footer-links">
+             <h4>Our Socail Links</h4>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, minus.</p>
+             <div class="socail-links mt-3">
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+               <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+             </div>
+           </div>
+ 
+         </div>
+       </div>
+     </div>
+   
+   <hr>
+   <div class="container py-4">
+     <div class="copyright">
+       &copy; Copyright <strong>Burger</strong>.All Rights reserved
+     </div>
+     <div class="credits">
+       Designed By <a href="#">SA coding</a>
+     </div>
+   </div>
+    </footer>
+ 
+   <!-- footer -->
+   <a href="#" class="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

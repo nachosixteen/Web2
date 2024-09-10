@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger</title>
+  <link rel="shortcut icon" type="image" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <!-- fonts links -->
+</head>
+<body>
+  <!-- nav section -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo"><img src="./images/logo.png" alt="" width="30px">BUR<span>GER</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" id="first-child">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Burger</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Other
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffc800;">
+                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                <li><a class="dropdown-item" href="#">Fries</a></li>
+                <li><a class="dropdown-item" href="#">Fried Chicken</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex">
+            <div class="icons">
+              <i class="fa-regular fa-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section -->
+     <!-- cart section -->
+        <h2 class="page-title text-center my-5 py-3" style="background-color: #ffc800;">Cart</h2>
+        <div class="page-content">  
+
+            <!-- Cart Star -->
+            <section class="pt-80 pb-40">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 mb-64 mb-lg-0 px-5">
+                            <div class=" mb-64">
+                                <table class="table cart-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="h6">PRODUCTO</th>
+                                            <th class="h6">PRECIO</th>
+                                            <th class="h6">CANTIDAD</th>
+                                            <th class="h6">SUBTOTAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-block">
+                                                <a href="#" class="remove-from-cart-btn"><i class="fa-solid fa-x"></i></a>
+                                                <img src="images/b1.png" alt="">
+                                                <a href="product-detail.html" class="h6">Crunch Grillhouse Burger</a>
+                                            </td>
+                                            <td>
+                                                <p class="lead color-black">$240.00</p>
+                                            </td>
+                                            <td>
+                                                <div class="quantity quantity-wrap">
+                                                    <div class="decrement"><i class="fa-solid fa-minus"></i></div>
+                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                                                    <div class="increment"><i class="fa-solid fa-plus"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h6>$240.00</h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-block">
+                                                <a href="#" class="remove-from-cart-btn"><i class="fa-solid fa-x"></i></i></a>
+                                                <img src="images/b2.png" alt="">
+                                                <a href="product-detail.html" class="h6">Sizzle Snap Burgers</a>
+                                            </td>
+                                            <td>
+                                                <p class="lead color-black">$240.00</p>
+                                            </td>
+                                            <td>
+                                                <div class="quantity quantity-wrap">
+                                                    <div class="decrement"><i class="fa-solid fa-minus"></i></div>
+                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                                                    <div class="increment"><i class="fa-solid fa-plus"></i></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h6>$240.00</h6>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- <div class=" d-xl-none d-block mb-32">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="cart-item-card text-center mb-32">
+                                            <a href="#" class="remove-from-cart-btn"><i class="fa-light fa-xmark"></i></a>
+                                            <div class="product-img mb-16">
+                                                <img src="images/b1.png" alt="" class="mx-auto">
+                                            </div>
+                                            <a href="product-detail.html" class="h5 title mb-24">Crunch Grillhouse</a>
+                                            <div class="d-flex justify-content-between align-items-center mb-16">
+                                                <h6>Price:</h6>
+                                                <p class="lead color-black">$240.00</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-16">
+                                                <h6>Quantity:</h6>
+                                                <div class="quantity quantity-wrap">
+                                                    <div class="decrement"><i class="fa-solid fa-dash"></i></div>
+                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                                                    <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Total:</h6>
+                                                <h6>$240.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="cart-item-card text-center mb-32">
+                                            <a href="#" class="remove-from-cart-btn"><i class="fa-light fa-xmark"></i></a>
+                                            <div class="product-img mb-16">
+                                                <img src="images/b2.png" alt="" class="mx-auto">
+                                            </div>
+                                            <a href="product-detail.html" class="h5 title mb-24">Crunch Grillhouse</a>
+                                            <div class="d-flex justify-content-between align-items-center mb-16">
+                                                <h6>Price:</h6>
+                                                <p class="lead color-black">$240.00</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-16">
+                                                <h6>Quantity:</h6>
+                                                <div class="quantity quantity-wrap">
+                                                    <div class="decrement"><i class="fa-solid fa-dash"></i></div>
+                                                    <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                                                    <div class="increment"><i class="fa-solid fa-plus-large"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h6>Total:</h6>
+                                                <h6>$240.00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <a href="index.html" class="cus-btn primary">
+                                <span class="icon-wrapper">
+                                    <svg class="icon-svg icon-svg-copy" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.2522 11.9789C14.4658 10.1925 13.7513 6.14339 15.6567 4.23792M15.6567 4.23792C14.565 5.3296 11.4885 7.21521 7.91576 3.64246M15.6567 4.23792L4.34301 15.5516" stroke="#FCFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                Continuar Comprando
+                            </a>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <div class="cart-summary">
+                                <h6 class="title mb-24">RESUMEN ORDEN</h6>
+                                <div class="cart-summary-detail mb-24">
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">SUBTOTAL</p>
+                                        <p class="lead">$560.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">VALOR DOMICILIO</p>
+                                        <p class="lead">$5.00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mb-24">
+                                        <p class="lead color-black">DESCUENTO PROMO</p>
+                                        <p class="lead">-$5.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-48">
+                                    <h5 class="color-primary">TOTAL</h5>
+                                    <h5 class="color-primary">$420.00</h5>
+                                </div>
+                                <a href="checkout.html" class="cus-btn dark">
+                                    <span class="icon-wrapper">
+                                        <svg class="icon-svg icon-svg-copy" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M16.2522 11.9789C14.4658 10.1925 13.7513 6.14339 15.6567 4.23792M15.6567 4.23792C14.565 5.3296 11.4885 7.21521 7.91576 3.64246M15.6567 4.23792L4.34301 15.5516" stroke="#FCFDFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    Ir a pagar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Cart End -->
+            
+        </div>
+    <!-- cart section -->
+  <!-- footer -->
+  <footer id="footer" style="margin-top: 50px;">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a class="navbar-brand" href="#" id="logo2"><img src="./images/logo.png" alt="" width="30px">Burger</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, libero.</p><br>
+            <p>
+              Karachi <br><br>
+              Sindh <br><br>
+              Pakistan <br><br>
+            </p>
+            <strong><i class="fa-solid fa-phone"></i> Phone: <strong>+0000000000000000</strong></strong><br>
+            <strong><i class="fa-solid fa-envelope"></i> Email: <strong>example@gmail.com</strong></strong>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Privacy policay</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aperiam.</p>
+            <ul>
+              <li><a href="#">Pizza</a></li>
+              <li><a href="#">Fried chicken</a></li>
+              <li><a href="#">Fries</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Socail Links</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, minus.</p>
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+  <hr>
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong>Burger</strong>.All Rights reserved
+    </div>
+    <div class="credits">
+      Designed By <a href="#">SA coding</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- footer -->
+
+
+
+
+
+
+  <a href="#" class="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        let btnDecrement = document.querySelectorAll(".decrement i");
+        let btnIncrement = document.querySelectorAll(".increment i");
+        let countProduct = document.querySelectorAll(".quantity input.number");
+        btnIncrement.forEach((btnI, pos)=>{
+            btnI.addEventListener('click', () => {
+                const currentValue = parseInt(countProduct[pos].value);
+                countProduct[pos].value = currentValue + 1;
+            });
+        })
+        btnDecrement.forEach((btnD, pos)=>{
+            btnD.addEventListener('click', () => {
+                const currentValue = parseInt(countProduct[pos].value);
+                if (currentValue > 1) {
+                    countProduct[pos].value = currentValue - 1;
+                }
+            })  
+        });
+    </script>
+</body>
+</html>
