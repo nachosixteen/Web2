@@ -27,8 +27,8 @@ let  getInfoProduc = (id)=>{
     btnCart.addEventListener("click", ()=>{
         storageProduct(products[id]);
     });
-    iconCount.textContent = con;
-    con++;
+    iconCount.textContent = con++;
+
     //agregar evento al icono del carrito 
     iconCart.addEventListener("click", ()=>{
         if (listCart.parentElement.style.display == "none") {
@@ -38,7 +38,6 @@ let  getInfoProduc = (id)=>{
         }
         
     });
-    iconCount.textContent = Number(iconCount.textContent) + 1;
 };
 
 //Funcion para guardar los productos del carrito en localstorage
@@ -70,15 +69,29 @@ let addProCart = ( prod )=>{
         </td>
     `;
     listCart.appendChild(row);
+
+    //Actualiza el contador despues de agregar el producto
+    iconCount.textContent = document.querySelectorAll(".list-cart tbody tr").length;
+
+    // Asignar el evento de eliminar dinámicamente
+    row.querySelector(".btn-delete").addEventListener("click", function() {
+        deleteCart(row);
+    });
 };
 
 // Funcion para eliminar producto del carrito
-let deleteCart = ( id )=>{
-    let btnEliminar = document.querySelectorAll(".btn-delete");
-    btnEliminar[(id-1)].parentElement.parentElement.remove();
-    console.log(btnEliminar[(id-1)]);
-    if( Number(iconCount.textContent) > 0){
-        iconCount.textContent = con--;
+let deleteCart = ( row )=>{
+    // Eliminar la fila seleccionada
+    row.remove();
+
+    // Actualizar el contador al número actual de productos en el carrito
+    let itemsInCart = document.querySelectorAll(".list-cart tbody tr").length;
+    iconCount.textContent = itemsInCart;
+
+    // Reiniciar `con` cuando se eliminan todos los productos
+    if (itemsInCart === 0) {
+        iconCount.textContent = 0;
+        con = 1; // Resetear el contador de productos
     }
 };
 
